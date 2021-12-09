@@ -44,5 +44,7 @@ Load `extract_data.ipynb` into `jupyter` or Google Colab. Execute all cells.
 Load `content_selection.ipynb` into `jupyter` or Google Colab. Execute all cells.
 
 ### Step 4
+Inference via T5 Transformer model.
 
 ### Step 5
+
