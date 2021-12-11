@@ -32,6 +32,11 @@ Source: [`content_selection.py`](content_selection.py)
 Inputs: `transcript` (`str`), `n` (`int`)
 Outputs:  Uses `summa` library to get the top 5 sentences from episode transcript text. Uses `n` to determine the percentage of sentences to feed into the `ratio` param in `summa.summarizer(ratio=)`
 
+### `get_word_len`
+Source: [`t5_training.py`](t5_training.py)
+Inputs: `row` (`Series`)
+Outputs:  Returns the length of the given podcast transcript
+
 ## Usage
 
 ### Install dependencies
