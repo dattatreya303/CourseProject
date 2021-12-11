@@ -15,8 +15,10 @@ Each of the above files are accompanied by a corresponding `ipynb` notebook file
 ## Function Descriptions:
 
 ### `extract_episode_lists_and_transcripts`
-Source: [`extract_data.py`](extract_data.py)\\
-Inputs: `data_id` (int) Each of the raw data gzip files decompress into `spotify-podcasts-2020/podcasts-transcripts/<data_id>`.\\
+Source: [`extract_data.py`](extract_data.py)
+
+Inputs: `data_id` (int) Each of the raw data gzip files decompress into `spotify-podcasts-2020/podcasts-transcripts/<data_id>`.
+
 Output: tuple of two dicts - `show_episodes_dict` (Schema: `{show_prefix : [episode_prefix]}`) and `episode_transcript_dict` (Schema: `{episode_prefix: transcript_text}`)
 
 ### `generate_summ_dataset`
