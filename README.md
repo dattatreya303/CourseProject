@@ -1,4 +1,4 @@
-# Summary Extraction and Relevance Identification from Spotify Podcasts
+# Summary Extraction from Spotify Podcasts
 
 ## Description
 This repository contains the code and reports used in CS410 Fa21 course project. This document describes the usage of all scripts and functions defined in them. For more information about the project tasks, please see the the [proposal](CS_410_TIS_Project_proposal.pdf) and [progress-report](CS_410_TIS_Project_Progress_Report.pdf).
