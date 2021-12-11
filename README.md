@@ -8,6 +8,7 @@ This repository contains the code and reports used in CS410 Fa21 course project.
 | ----------- | ----------- |
 | [`extract_data.py`](extract_data.py) | Extract episode transcripts and creator descriptions from the raw dataset. Process them combined CSVs using episode prefix as unique id|
 | [`content_selection.py`](content_selection.py) | Reduces episode transcripts to the top 5 most important sentences according to TextRank algorithm |
+| [`t5_training.py`](t5_training.py) | Script for fine tuning the T5 transformer model on the preprocessed podcast dataset |
 
 Each of the above files are accompanied by a corresponding `ipynb` notebook file as well. CAs/TAs are requested to use those notebooks for evaluation. They can be imported into a local jupyter instance or Google Colab
 
