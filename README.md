@@ -82,7 +82,7 @@ Outputs: Evaluates the T5 (Off the shelf) model on a given validation subset and
 ### `get_t5_finetuned_scores`
 Source: [`walkthrough.ipynb`](walkthrough.ipynb)
 
-Inputs: `val_subset` (`DataFrame`), `model` (`Model`), `tokenizer` (`Model Tokenizer`)
+Inputs: `val_subset` (`DataFrame`), `model_final` (`Model`), `tokenizer_final` (`Model Tokenizer`)
 
 Outputs: Evaluates the T5 (fine tuned on Spotify dataset) model on a given validation subset and returns the average F1 score of Rouge across all samples of the val subset. This is done based on the passed model and corresponding tokenizer.
 
