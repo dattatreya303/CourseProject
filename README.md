@@ -109,9 +109,16 @@ Each of the above files are accompanied by a corresponding `ipynb` notebook file
 
 ## Results 
 
+### Qualitative Analysis
+
+A given example was summarised by the three proposed methods (details in walkthrough). Here are the preliminary observations:
+
+* While comparing ROUGE scores, we see that TextRank performs well in comparison to deep learning based abstractive methods since it ROUGE is scored based on a similarity score that is biased towards summaries that use words similar to the actual text, so extractive methods like TextRank tend to do better here.
+* Finetuning the model on the spotify dataset does help however, with increased ROUGE scores and a more coherent summary.
+
 ### Quantitative Results
 
-The following table outlines our results on a subset of the validation dataset (due to computational constraints):
+The following table outlines our results on a subset of the validation dataset:
 
 | Method Name | Average ROUGE F1 Score |
 | ----------- | ----------- |
