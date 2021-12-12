@@ -152,7 +152,7 @@ Dattatreya has been responsible for aquiring and preprocessing the dataset from 
 Arijit has been responsible for picking up on the TextRank and starting the implementation for training T5 transformer. This involved conducting a full scale analysis of using TextRank and experimenting with different off the shelf T5 transformers from HuggingFace which would be most apt for the current context i.e. the Spotify Dataset. 
   
 ### Gargi Balasubramaniam
-Gargi has been responsible for continuing with the T5 approach and fine tuning the T5 transformer on the spotify dataset in contrast to using an off the shelf version. Gargi also prepared the evaluation scripts for evaluating all the three methods on a validation dataset.   
+Gargi has been responsible for continuing with the T5 approach and fine tuning the T5 transformer on the spotify dataset in contrast to using an off the shelf version. This also involved tuning hyperparameters of the model (learning rate, epochs etc.). Gargi also prepared the evaluation scripts for evaluating all the three methods on a validation dataset.   
   
 Overall, while there was a sequence in the order of tasks picked up by each person, all of the team members contributed equally throughout the ideation process and provided required assistance to fellow teammates when required. 
 
