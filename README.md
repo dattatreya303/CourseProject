@@ -118,7 +118,7 @@ The following table outlines our results on a subset of the validation dataset:
 | ----------- | ----------- |
 | TextRank | 0.109 |
 | T5 (Off the shelf) | 0.144 |
-| T5 (Finetuned on Spotify Dataset) | 0.222 |
+| T5 (Finetuned on Spotify Dataset) | 0.312 |
 
 While comparing ROUGE scores, we see that the FineTuned model performs well in comparison to other baselines, which confirms our expectation that domain adaptation on the Spotify dataset is a necessary step towards a higher score.
 
