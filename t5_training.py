@@ -280,8 +280,8 @@ def main():
     for epoch in range(TRAIN_EPOCHS):
         train(epoch, tokenizer, model, device, training_loader, optimizer)
     
-    model.save_pretrained('./t5-model-3000')
-    tokenizer.save_pretrained('./t5-model-3000')
+    model.save_pretrained('./tisproj')
+    tokenizer.save_pretrained('./tisproj')
 
 if __name__ == '__main__':
     main()
