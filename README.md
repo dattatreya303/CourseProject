@@ -139,8 +139,8 @@ We used five English speaking volunteers to score the summaries into the defined
 
 ## Room for improvement and Error Analysis
 
-* Dataset - Perhaps episode description is not the ideal ground truth to represent summary, since it often contains promotional material which the model learns to generate after every summary, leading to post processing overhead.
-* Compute - Since even on the best settings on Colab, the T5 model can only take a certain amount of tokens, perhaps given enough compute T5 has the potential to generate even better summaries. Nevertheless, deep learning based techniques seem to be infeasible for simple use cases.
+* **Dataset** - Perhaps episode description is not the ideal ground truth to represent summary, since it often contains promotional material which the model learns to generate after every summary, leading to post processing overhead.
+* **Compute** - Since even on the best settings on Colab, the T5 model can only take a certain amount of tokens, perhaps given enough compute T5 has the potential to generate even better summaries. Nevertheless, deep learning based techniques seem to be infeasible for simple use cases.
 
 
 ## Statement of personal contribution
