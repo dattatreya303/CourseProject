@@ -9,6 +9,7 @@ This repository contains the code and reports used in CS410 Fa21 course project.
 | [`extract_data.py`](extract_data.py) | Extract episode transcripts and creator descriptions from the raw dataset. Process them combined CSVs using episode prefix as unique id|
 | [`content_selection.py`](content_selection.py) | Reduces episode transcripts to the top 5 most important sentences according to TextRank algorithm |
 | [`t5_training.py`](t5_training.py) | Script for fine tuning the T5 transformer model on the preprocessed podcast dataset |
+| [`walkthrough.ipynb`](walkthrough.ipynb) | Tutorial Notebook for code illustration and Evaluation of 3 methods |
 
 Each of the above files are accompanied by a corresponding `ipynb` notebook file as well. CAs/TAs are requested to use those notebooks for evaluation. They can be imported into a local jupyter instance or Google Colab
 
@@ -68,6 +69,27 @@ Inputs: `epoch` (`int`), `model` (`Model`), `tokenizer` (`Model Tokenizer`), `de
 
 Outputs: Evaluates the model for the given epoch by sampling data based on batch size parameters from the passed custom dataloader. Returns the predictions and actuals pairs.
 
+### `get_textrank_scores`
+Source: [`walkthrough.ipynb`](walkthrough.ipynb)
+
+Inputs: `val_subset` (`DataFrame`)
+
+Outputs: Evaluates the textrank model on a given validation subset and returns the average F1 score of Rouge across all samples of the val subset.
+
+### `get_t5_scores`
+Source: [`walkthrough.ipynb`](walkthrough.ipynb)
+
+Inputs: `val_subset` (`DataFrame`), `model` (`Model`), `tokenizer` (`Model Tokenizer`)
+
+Outputs: Evaluates the T5 (Off the shelf) model on a given validation subset and returns the average F1 score of Rouge across all samples of the val subset. This is done based on the passed model and corresponding tokenizer.
+
+### `get_t5_finetuned_scores`
+Source: [`walkthrough.ipynb`](walkthrough.ipynb)
+
+Inputs: `val_subset` (`DataFrame`), `model` (`Model`), `tokenizer` (`Model Tokenizer`)
+
+Outputs: Evaluates the T5 (fine tuned on Spotify dataset) model on a given validation subset and returns the average F1 score of Rouge across all samples of the val subset. This is done based on the passed model and corresponding tokenizer.
+
 
 ## Usage
 
@@ -84,6 +106,8 @@ Load `content_selection.ipynb` into `jupyter` or Google Colab. Execute all cells
 Load `t5_training.ipynb` into `jupyter` or Google Colab. Execute all cells.
 
 ### Tutorial Notebook for evaluation and inference on the three methods
+Load `walkthrough.ipynb` into `jupyter` or Google Colab. Execute all cells.
+
 
 Each of the above files are accompanied by a corresponding `ipynb` notebook file as well. CAs/TAs are requested to use those notebooks for evaluation. They can be imported into a local jupyter instance or Google Colab
 
