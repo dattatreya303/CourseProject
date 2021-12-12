@@ -137,6 +137,12 @@ We used five English speaking volunteers to score the summaries into the defined
 * 1 evaluator felt that TextRank is definitely better, and 1 Evaluator felt that given enough data, FineTuned T5 is a much better abstraction of the podcast transcript.
 * 5 out of 5 evaluators agreed that the FineTuned T5 generated better summaries than Off-the-shelf Pretrained T5. This validates our assumption about the need to perform domain adaptation.
 
+## Room for improvement and Error Analysis
+
+* Dataset - Perhaps episode description is not the ideal ground truth to represent summary, since it often contains promotional material which the model learns to generate after every summary, leading to post processing overhead.
+* Compute - Since even on the best settings on Colab, the T5 model can only take a certain amount of tokens, perhaps given enough compute T5 has the potential to generate even better summaries. Nevertheless, deep learning based techniques seem to be infeasible for simple use cases.
+
+
 ## Statement of personal contribution
   
 ### Dattatreya Mohapatra (Captain)
