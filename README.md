@@ -115,8 +115,8 @@ The following table outlines our results on a subset of the validation dataset (
 
 | Method Name | Average ROUGE F1 Score |
 | ----------- | ----------- |
-| TextRank | |
-| T5 (Off the shelf) |  |
+| TextRank | 0.088 |
+| T5 (Off the shelf) | 0.116 |
 | T5 (Finetuned on Spotify Dataset) |  |
 
 ### Human Evaluation 
