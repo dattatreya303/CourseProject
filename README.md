@@ -100,6 +100,7 @@ Load `content_selection.ipynb` into `jupyter` or Google Colab. Execute all cells
 
 ### Finetune T5 model on Spotify Dataset
 Load `t5_training.ipynb` into `jupyter` or Google Colab. Execute all cells.
+*Note: We have followed the tutorial on training the t5 transformer model provided by https://github.com/abhimishra91/transformers-tutorials.*
 
 ### Tutorial Notebook for evaluation and inference on the three methods
 Load `walkthrough.ipynb` into `jupyter` or Google Colab. Execute all cells.
@@ -144,6 +145,18 @@ We used five English speaking volunteers to score the summaries into the defined
 * 1 evaluator felt that TextRank is definitely better, and 1 Evaluator felt that given enough data, FineTuned T5 is a much better abstraction of the podcast transcript.
 * 5 out of 5 evaluators agreed that the FineTuned T5 generated better summaries than Off-the-shelf Pretrained T5. This validates our assumption about the need to perform domain adaptation.
 
+## Statement of personal contribution
+  
+### Dattatreya Mohapatra (Captain)
+Dattatreya has been responsible for aquiring and preprocessing the dataset from its raw form to the tabular format for feeding the dataset into the proposed models. This process involved aggregating multiple JSON fragments into a single source of truth. Dattatreya also initiated the process of running TextRank (the intitial method) and conducted sample evaluations to test the code infrastucture end to end. 
+  
+### Arijit Ghosh Chowdhury
+Arijit has been responsible for picking up on the TextRank and starting the implementation for training T5 transformer. This involved conducting a full scale analysis of using TextRank and experimenting with different off the shelf T5 transformers from HuggingFace which would be most apt for the current context i.e. the Spotify Dataset. 
+  
+### Gargi Balasubramaniam
+Gargi has been responsible for continuing with the T5 approach and fine tuning the T5 transformer on the spotify dataset in contrast to using an off the shelf version. Gargi also prepared the evaluation scripts for evluating all the three methods on a validation dataset. 
+
+  
 
 
 
